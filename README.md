@@ -12,7 +12,7 @@ The react client folder
 Shared code between server and client. If server and client are separate repositories, then this folder would be a shared submodule
 
 /testdb: \
-A quick docker compose script for launching the database server used to run this. When creating the server, make sure you also create a database called "testdb", a user called "yui" with password "pass".
+A quick docker compose script for launching the database server used to run this. When creating the server, create a database called "testdb", then run /server/prisma/schema.sql into the server for testdb to initiate the user and all entities. iirc the command is something like `psql -h localhost -U yui -d testdb -p 29345 -f ./server/prisma/schema.sql` 
 
 ## Commands
 `yarn server start`: starts the server \
