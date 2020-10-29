@@ -1,0 +1,13 @@
+scalar Upload
+
+type Query {
+  _: Boolean
+}
+
+type Mutation {
+  _: Boolean
+}
+
+interface EntityBase {
+  id: Int! 
+}

@@ -1,0 +1,4 @@
+fragment ProfileData on Profile {
+  id
+  bio
+}

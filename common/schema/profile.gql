@@ -1,0 +1,5 @@
+type Profile implements EntityBase {
+  id: Int!
+  bio: String!
+  user: User!
+}

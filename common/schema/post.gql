@@ -1,0 +1,8 @@
+type Post implements EntityBase {
+  id: Int!
+  title: String!
+  createdAt: String!
+  content: String
+  published: String!
+  author: User!
+}

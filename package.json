@@ -1,0 +1,21 @@
+{
+  "name": "dborm-test",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint-fix": "yarn tslint --project ./ --fix",
+    "gql": "yarn server gql && yarn client gql",
+    "server": "cd server && yarn",
+    "client": "cd client && yarn"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,17 @@
+query GetAllUsers {
+  getAllUsers {
+    ...UserData
+  }
+}
+
+fragment UserData on User {
+  id
+  name
+  email
+  posts {
+    ...PostData
+  }
+  profile {
+    ...ProfileData
+  }
+}

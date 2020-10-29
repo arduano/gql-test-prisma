@@ -1,0 +1,15 @@
+overwrite: true
+schema: "../common/schema/**/*.gql"
+documents: "./src/**/*.gql"
+generates:
+  src/.gql/graphql-client.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+      - "fragment-matcher"
+    config:
+      withHooks: true
+      withMutationFn: true
+      apolloReactHooksImportFrom: "@apollo/react-hooks"
+      maybeValue: T | undefined

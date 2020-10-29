@@ -1,0 +1,11 @@
+extend type Query {
+  getAllUsers: [User!]!
+}
+
+type User implements EntityBase {
+  id: Int!
+  name: String!
+  email: String!
+  posts: [Post!]!
+  profile: Profile!
+}
